@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![https://drive.google.com/file/d/1p5yQKs0yxNy0f8AMsOP02y-BIfpxxgAN/view?usp=sharing](Images/diagram_filename.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
   - https://github.com/ssmm1315/ELKStack1/blob/master/Ansible
 
@@ -23,10 +23,10 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting access to the network.
+Load balancing ensures that the application will be highly redundant, in addition to restricting access to the network.
 - What aspect of security do load balancers protect? They protect from DDoS attacks by managing traffic ovr servers What is the advantage of a jump box?this gives you more security over the network since there is only one to harden and manage for the whole netwok
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system health.
 - What does Filebeat watch for?_monitors log files on servers that you install it on and collects log events
 - What does Metricbeat record?_takes the statistics and puts them into Elasticsearch to help you monitor the servers
 
