@@ -77,6 +77,7 @@ This ELK server is configured to monitor the following machines:
 - 10.0.0.5 Web1
 - 10.0.0.6 Web2
 - 10.0.0.7 Web3
+
 We have installed the following Beats on these machines:
 - Filebeats
 - Metricbeats
@@ -92,7 +93,7 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the group the private ip address and the path 
 - Run the playbook, and navigate to VM to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+_ Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? https://github.com/ssmm1315/ELKStack1/blob/master/Ansible       Where do you copy it?_ nano a new file in the /etc/ansible DIR and copy playbook into the new file
 - _Which file do you update to make Ansible run the playbook on a specific machine? Hosts file How do I specify which machine to install the ELK server on versus which to install Filebeat on?_Using groups in the host file [webservers] [elk]
 - _Which URL do you navigate to in order to check that the ELK server is running?
