@@ -47,7 +47,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 24.22.17.244
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by JumpBox.
 -Which machine did you allow to access your ELK VM? JumpboxProvisioner    What was its IP address?52.149.156.214
 
 A summary of the access policies in place can be found in the table below.
@@ -78,22 +78,23 @@ This ELK server is configured to monitor the following machines:
 - 10.0.0.6 Web2
 - 10.0.0.7 Web3
 We have installed the following Beats on these machines:
-- 
-
+- Filebeats
+- Metricbeats
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- _Filebeats collect the log files from the servers it shows changes to the log files 
+ - Metricbeat collects statistics from the servers  
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
 - Copy the Ansible file to /etc/ansible.
-- Update the _____ file to include...
+- Update the hosts file to include the group the private ip address and the path 
 - Run the playbook, and navigate to VM to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook?  Where do you copy it?_ nano a new file in the /etc/ansible DIR and copy playbook into the new file
+- _Which file is the playbook? https://github.com/ssmm1315/ELKStack1/blob/master/Ansible       Where do you copy it?_ nano a new file in the /etc/ansible DIR and copy playbook into the new file
 - _Which file do you update to make Ansible run the playbook on a specific machine? Hosts file How do I specify which machine to install the ELK server on versus which to install Filebeat on?_Using groups in the host file [webservers] [elk]
 - _Which URL do you navigate to in order to check that the ELK server is running?
-
+https://52.151.56.200:5201/kibana/home
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
