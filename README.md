@@ -48,7 +48,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 - 24.22.17.244
 
 Machines within the network can only be accessed by _____.
--Which machine did you allow to access your ELK VM? Jumpbox What was its IP address?52.149.156.214
+-Which machine did you allow to access your ELK VM? JumpboxProvisioner    What was its IP address?52.149.156.214
 
 A summary of the access policies in place can be found in the table below.
 
@@ -70,14 +70,15 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![](Images/docker_ps_output.png)
+![https://github.com/ssmm1315/ELKStack1/blob/master/ELK%20Server.png](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
-
+- 10.0.0.5 Web1
+- 10.0.0.6 Web2
+- 10.0.0.7 Web3
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- 
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
@@ -86,13 +87,13 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
+- Copy the Ansible file to /etc/ansible.
 - Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Run the playbook, and navigate to VM to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which file is the playbook?  Where do you copy it?_ nano a new file in the /etc/ansible DIR and copy playbook into the new file
+- _Which file do you update to make Ansible run the playbook on a specific machine? Hosts file How do I specify which machine to install the ELK server on versus which to install Filebeat on?_Using groups in the host file [webservers] [elk]
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
