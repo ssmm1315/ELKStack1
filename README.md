@@ -77,7 +77,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![https://github.com/ssmm1315/ELKStack1/blob/master/ELK%20Server.png](Images/docker_ps_output.png)
 
-
+![image](https://user-images.githubusercontent.com/63370629/89094822-f64f0280-d37c-11ea-807b-fbe313a4849e.png)
 
 
 
