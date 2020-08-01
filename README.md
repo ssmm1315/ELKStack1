@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
-  - https://github.com/ssmm1315/ELKStack1/blob/master/Ansible
+  - https://github.com/ssmm1315/ELKStack1/tree/master/Ansible%20Playbooks
 
 This document contains the following details:
 - Description of the Topologu
@@ -109,7 +109,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to VM to check that the installation worked as expected.
 
 _ Answer the following questions to fill in the blanks:_
-- Which file is the playbook? https://github.com/ssmm1315/ELKStack1/blob/master/Ansible       
+- Which file is the playbook?  https://github.com/ssmm1315/ELKStack1/tree/master/Ansible%20Playbooks      
 - Where do you copy it? nano a new file with the playbook's name in the /etc/ansible DIR and copy playbook into the new file, save file
 - Which file do you update to make Ansible run the playbook on a specific machine? Hosts file 
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on? Using groups in the host file example [webservers] [elk] could be created then list the IP addresses of the VM's in the groups.
