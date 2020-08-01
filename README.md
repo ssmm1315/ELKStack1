@@ -40,7 +40,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web1     | VM       | 10.0.0.5   | Linux            |
 | Web2     | VM       | 10.0.0.6   | Linux            |
 | Web3     | VM       | 10.0.0.7   | Linux            |
-| Elk      | VM       | 10.2.0.4   | Linux
+| Elk      | VM       | 10.2.0.4   | Linux            |
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -49,7 +49,8 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 - 24.22.17.244
 
 Machines within the network can only be accessed by JumpBox.
--Which machine did you allow to access your ELK VM? JumpboxProvisioner    What was its IP address?52.149.156.214
+- Which machine did you allow to access your ELK VM? JumpboxProvisioner    
+- What was its IP address?52.149.156.214
 
 A summary of the access policies in place can be found in the table below.
 
