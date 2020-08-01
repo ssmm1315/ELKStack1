@@ -39,7 +39,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web1     | VM       | 10.0.0.5   | Linux            |
 | Web2     | VM       | 10.0.0.6   | Linux            |
 | Web3     | VM       | 10.0.0.7   | Linux            |
-
+| Elk      | VM       | 10.2.0.4   | Linux
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -54,9 +54,12 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box |     No              | 24.22.17.244         |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box |     Yes             | 24.22.17.244         |
+| Web1     |     No              | 10.0.0.4             |
+| Web2     |     No              | 10.0.0.4             |
+| Web3     |     No              | 10.0.0.4             |
+| Elk      |     No              | 10.0.0.4             |
+
 
 ### Elk Configuration
 
@@ -66,11 +69,22 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The playbook implements the following tasks:
 - Installs Docker
 - Installs Docker module
+- Checks for memory
 - Downloads and launches ELK Container
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![https://github.com/ssmm1315/ELKStack1/blob/master/ELK%20Server.png](Images/docker_ps_output.png)
+
+
+
+
+
+
+
+
+
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -97,5 +111,6 @@ _ Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? https://github.com/ssmm1315/ELKStack1/blob/master/Ansible       Where do you copy it?_ nano a new file in the /etc/ansible DIR and copy playbook into the new file
 - _Which file do you update to make Ansible run the playbook on a specific machine? Hosts file How do I specify which machine to install the ELK server on versus which to install Filebeat on?_Using groups in the host file [webservers] [elk]
 - _Which URL do you navigate to in order to check that the ELK server is running?
-https://52.151.56.200:5201/kibana/home
+https://52.151.56.200:5201/app/kibana#/home
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- to run the playbookuse this command while in the /etc/ansible folder- ansible-playbook pentest.yml
