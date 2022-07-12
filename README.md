@@ -4,7 +4,7 @@ Project in Azure making an Virtual network and elk stack server
 
 The files in this repository were used to configure the network depicted below.
 
-![https://drive.google.com/file/d/1p5yQKs0yxNy0f8AMsOP02y-BIfpxxgAN/view?usp=sharing](Images/diagram_filename.png)
+![Diagram](https://drive.google.com/file/d/1p5yQKs0yxNy0f8AMsOP02y-BIfpxxgAN/view?usp=sharing)(Images/diagram_filename.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
