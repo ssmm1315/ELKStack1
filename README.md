@@ -109,12 +109,12 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the group the private ip address and the path 
 - Run the playbook, and navigate to VM to check that the installation worked as expected.
 
-_ Answer the following questions to fill in the blanks:_
+
 - Which file is the playbook?  https://github.com/ssmm1315/ELKStack1/tree/master/Ansible%20Playbooks      
 - Where do you copy it? nano a new file with the playbook's name in the /etc/ansible DIR and copy playbook into the new file, save file
 - Which file do you update to make Ansible run the playbook on a specific machine? Hosts file 
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on? Using groups in the host file example [webservers] [elk] could be created then list the IP addresses of the VM's in the groups.
 - Which URL do you navigate to in order to check that the ELK server is running? https://52.151.56.200:5201/app/kibana#/home
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-- To run the playbook use this command while in the /etc/ansible folder- ansible-playbook pentest.yml
+
+- To run the playbook use this command while in the /etc/ansible folder - <b>ansible-playbook pentest.yml</b>
